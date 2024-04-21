@@ -8,15 +8,15 @@ import { LoadingComponent } from '../loading/loading.component';
   templateUrl: './gallery.component.html',
   styleUrl: './gallery.component.scss'
 })
-export class GalleryComponent implements OnInit{
-  loading: boolean = true; // Estado de carregamento
+export class GalleryComponent implements OnInit {
+  public loading: boolean = true; // Estado de carregamento
 
-  constructor() { }
 
   ngOnInit(): void {
-    // Simulação de carregamento de imagens
-    setTimeout(() => {
-      this.loading = false; // Altera o estado de carregamento quando as imagens são carregadas
-    }, 2000); // Tempo de simulação, ajuste conforme necessário
+
+      window.onload = () => {
+        this.loading = false; // Altera o estado de carregamento quando todos os recursos da página forem carregados
+      };
+  
   }
 }

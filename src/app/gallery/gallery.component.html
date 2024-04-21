@@ -2,6 +2,11 @@
 
 
     <div class="black-background">
+
+        @if(loading){
+        <app-loading></app-loading>
+
+        }@else {
         <div class="content">
             <div>
                 <p style="font-style: normal; font-size: 3vh;margin-bottom: 2%;"> David Lino </p>
@@ -11,16 +16,13 @@
                 <p> 3D Designer </p>
 
                 <a href="" style="margin:1vh ;">home</a>
-                <a href="gallery" style="margin:1vh ;">gallery</a>
+                <a href="contact" style="margin:1vh ;">contact</a>
             </div>
-            <img src="../assets/images/Ellipse10.png" alt="profile image" style="height: 50%;" /> 
+            <img src="../assets/images/Ellipse10.png" alt="profile image" style="height: 50%;" />
 
         </div>
 
-        <app-loading *ngIf="loading"></app-loading>
-        <div *ngIf="!loading">
- TEXTE  
-        </div>
+
         <div class="projects">
 
 
@@ -31,7 +33,7 @@
             <img src="../../assets/images/img5.png" alt="placeholder" class="round-image" />
             <img src="../../assets/images/img6.png" alt="placeholder" class="round-image" />
             <img src="../../assets/images/img7.png" alt="placeholder" class="round-image" />
-            <img src="../../assets/images/img8.png" alt="placeholder" class="round-image" />
+            <!-- <img src="../../assets/images/img8.png" alt="placeholder" class="round-image" /> -->
             <img src="../../assets/images/img9.png" alt="placeholder" class="round-image" />
             <img src="../../assets/images/img10.png" alt="placeholder" class="round-image" />
             <img src="../../assets/images/img11.png" alt="placeholder" class="round-image" />
@@ -47,9 +49,11 @@
             <img src="../../assets/images/img21.png" alt="placeholder" class="round-image" />
             <img src="../../assets/images/img22.png" alt="placeholder" class="round-image" />
             <img src="../../assets/images/img23.png" alt="placeholder" class="round-image" />
- 
+
         </div>
         <hr>
 
+        }
     </div>
+
 </div>
