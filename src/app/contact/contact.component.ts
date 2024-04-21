@@ -14,6 +14,7 @@ export class ContactComponent implements OnInit {
   private mes = this.date.getMonth() - 1
   private idade = this.date.getFullYear() - 2005
   public age: any;
+  public email:string = 'nemix.br@gmail.com'
   ngOnInit(): void {
     if (this.mes <= 11) {
       this.age = this.idade - 1
