@@ -1,0 +1,130 @@
+/* Configuração do corpo */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+.black-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+.content {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    font-size: 2vh;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+
+    background-color: #080808;
+    width: 100%;
+    height: 60vh;
+
+    color: #ffffff;
+
+
+
+}
+
+.content button {
+
+
+    background-color: #080808;
+    width: 10vh;
+    height: 7vh;
+    color: #ffffff;
+    font-size: 2vh;
+    font-style: bold;
+    margin-bottom: 2vh;
+
+}
+
+hr {
+
+    border-color: rgb(255, 255, 255);
+    width: 90%;
+    margin-bottom: 3vh;
+
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover{
+    color: rgb(109, 0, 199);
+}
+.contentPurple {
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    background-color: #3E0070;
+    width: 100%;
+    border-radius: 0 50vh 50vh 0;
+    font-size: 1.5vh;
+    color: #ffffff;
+    margin-bottom: 2vh;
+}
+
+.contentPurple2 {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    background-color: #3E0070;
+    width: 100%;
+    border-radius: 50vh 0 0 50vh;
+    font-size: 1.5vh;
+    color: #ffffff;
+    margin-bottom: 2vh;
+
+}
+
+.round-image {
+
+    border-radius: 50%;
+
+}
+
+.projects {
+    background-image: url(../../assets/images/Rectangle1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #ffffff;
+    margin-bottom: 2vh;
+
+}
+
+.round-image {
+    margin: 20px;
+
+
+    width: calc(20vh - 10px);
+
+}
+
+@media (max-width: 768px) {
+
+    .round-image {
+        margin: 10px;
+
+        width: calc(30% - 10px);
+    }
+}
