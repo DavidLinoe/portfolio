@@ -10,14 +10,17 @@
                 <p> Robotic Teacher </p>
                 <p> 3D Designer </p>
 
-                <a href="home" style="margin:1vh ;">home</a>
+                <a href="" style="margin:1vh ;">home</a>
                 <a href="gallery" style="margin:1vh ;">gallery</a>
             </div>
             <img src="../assets/images/Ellipse10.png" alt="profile image" style="height: 50%;" /> 
 
         </div>
 
-
+        <app-loading *ngIf="loading"></app-loading>
+        <div *ngIf="!loading">
+ TEXTE  
+        </div>
         <div class="projects">
 
 
